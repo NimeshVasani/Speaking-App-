@@ -1,0 +1,8 @@
+IELTS Speaking application is MVVM based Android-kotlin app.
+This app target  those who are preparing for study abroad and want to improve their english communication skill.
+App use google's TTS engine as Prime AI in the app.
+Prime AI will ask questions based on CountDown Timer and user need to answer the questions
+Whole Conversation will store in .mp3 format so user can listne their audio recording and find their own mistake.
+This application alo include PRIME USER LOGIN. which include some additional feature and users have two option
+BUY PREMIUM DIRECTLY FROM APP or you can join any IELTS tuition classes inside INDIA and if your TUITION is not register then let us know 
+so we will add your classes into app firebase realtime database, by this way user can unlock all premium feature in FREE OF COST.
