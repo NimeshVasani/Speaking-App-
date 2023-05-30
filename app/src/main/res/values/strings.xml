@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SpeakingApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="basic_setting">Basic Setting</string>
+    <string name="sync_header">speaking Part Setting</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your Name</string>
+    <string name="age_title">Your Age</string>
+    <string name="speed_title">Default Speaking Speed</string>
+    <string name="intro_title">Default time for part 1</string>
+    <string name="follow_title">Default time for part 3</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Use manual Values</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string name="inst1">1.Press "start button"  to start Exam </string>
+    <string name="inst2">2.Each Introduction  questions has 20 sec for answer</string>
+    <string name="inst3">3.Each Cue card questions has 60 sec for preparation and 120 sec for answer</string>
+    <string name="inst4">4.Each follow-up  questions has 30 sec for answer</string>
+    <string name="inst5">5.Use this button to move fast next question(if your answer finish before time up)</string>
+    <string name="inst6">6.Use this button to repeat previous question</string>
+    <string name="inst7">7.At the end of test by clicking "yes" you can save your conversation</string>
+</resources>

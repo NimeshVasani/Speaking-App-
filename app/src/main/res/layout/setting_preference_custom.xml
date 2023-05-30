@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView
+        android:id="@+id/tv_banner_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:elevation="20dp"
+        app:shape_dot_radius="6dp"
+        app:shape_dot_spacing="2dp"
+        app:shape_dottedEdgesCutCorner_bottomLeftSize="10dp"
+        app:shape_dottedEdgesCutCorner_bottomRightSize="10dp"
+        android:layout_centerInParent="true"
+        app:shape_edge_position="right|left">
+
+    </io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView>
+</RelativeLayout>

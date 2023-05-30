@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:elevation="20dp"
+    tools:context="diamondcraftdevs.startups.speakingApp.MainActivity">
+
+    <io.github.florent37.shapeofview.shapes.ArcView
+        android:id="@+id/home_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:shape_arc_height="15dp"
+        app:shape_arc_position="bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="#eedd82">
+
+            <TextView
+                android:id="@+id/holder_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Speaking Mentor"
+                android:textColor="@color/black"
+                android:textSize="@dimen/outer_text_size"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/home_setting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/holder_name"
+                android:background="@drawable/round_corner1"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="src_in"
+                android:scaleType="fitXY"
+                android:src="@drawable/setting_icon" />
+        </RelativeLayout>
+    </io.github.florent37.shapeofview.shapes.ArcView>
+
+    <io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView
+        android:id="@+id/tv_banner_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_actionbar"
+        android:layout_margin="30dp"
+        android:elevation="20dp"
+        app:shape_dot_radius="6dp"
+        app:shape_dot_spacing="2dp"
+        app:shape_dottedEdgesCutCorner_bottomLeftSize="10dp"
+        app:shape_dottedEdgesCutCorner_bottomRightSize="10dp"
+        app:shape_edge_position="right|left">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F1948A"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Easy IELTS "
+            android:textColor="@color/black"
+            android:textSize="@dimen/outer_text_size" />
+    </io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView>
+
+    <LinearLayout
+        android:id="@+id/main_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/speaking_samples"
+                android:layout_width="@dimen/img_main"
+                android:layout_height="@dimen/img_main"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner1"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:drawableBottom="@drawable/sample_icon"
+                android:elevation="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:soundEffectsEnabled="true"
+                android:text="Sample\n Book"
+                android:textColor="@color/black"
+                android:textSize="@dimen/inner_text_size"
+                app:iconPadding="0dp"
+                app:iconTintMode="multiply" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/practice_tests"
+                android:layout_width="@dimen/img_main"
+                android:layout_height="@dimen/img_main"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner1"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:drawableBottom="@drawable/mock_test_icon"
+                android:elevation="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:soundEffectsEnabled="true"
+                android:text="Practice \n Test"
+                android:textColor="@color/black"
+                android:textSize="@dimen/inner_text_size"
+                app:iconGravity="textTop"
+                app:iconPadding="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mock_tests"
+                android:layout_width="@dimen/img_main"
+                android:layout_height="@dimen/img_main"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner1"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:drawableBottom="@drawable/exam_test_icon"
+                android:elevation="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:soundEffectsEnabled="true"
+                android:text="Mock \n Test"
+                android:textColor="@color/black"
+                android:textSize="@dimen/inner_text_size"
+                app:iconGravity="textTop"
+                app:iconPadding="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/results"
+                android:layout_width="@dimen/img_main"
+                android:layout_height="@dimen/img_main"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner1"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:drawableBottom="@drawable/result_icon"
+                android:elevation="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:soundEffectsEnabled="true"
+                android:text="Test \n Result"
+                android:textColor="@color/black"
+                android:textSize="@dimen/inner_text_size"
+                app:iconGravity="textTop"
+                app:iconPadding="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_linear"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="@dimen/img_small_width"
+            android:layout_height="@dimen/img_small_height"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_corner1"
+            android:backgroundTint="@color/white"
+            android:backgroundTintMode="add"
+            android:elevation="20dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ic_share" />
+
+        <ImageButton
+            android:id="@+id/btn_setting"
+            android:layout_width="@dimen/img_small_width"
+            android:layout_height="@dimen/img_small_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_corner1"
+            android:backgroundTint="@color/white"
+            android:backgroundTintMode="add"
+            android:elevation="20dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ic_setting" />
+
+        <ImageButton
+            android:layout_width="@dimen/img_small_width"
+            android:layout_height="@dimen/img_small_height"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_corner1"
+            android:backgroundTint="@color/white"
+            android:backgroundTintMode="add"
+            android:elevation="20dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/ic_rating" />
+    </RelativeLayout>
+</RelativeLayout>

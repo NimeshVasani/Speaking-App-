@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="img_main">240dp</dimen>
+    <dimen name="img_small_width">160dp</dimen>
+    <dimen name="img_small_height">100dp</dimen>
+    <dimen name="inner_text_size">28sp</dimen>
+    <dimen name="outer_text_size">48sp</dimen>
+    <dimen name="icon_size">100dp</dimen>
+</resources>

@@ -1,0 +1,35 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+
+        app:defaultValue="false"
+        app:key="sync"
+        app:title="@string/sync_title" />
+
+    <ListPreference
+        app:dependency="sync"
+        app:defaultValue="0.8x"
+        app:entries="@array/speed_entries"
+        app:entryValues="@array/speed_values"
+        app:key="speed"
+        app:title="@string/speed_title"
+        app:useSimpleSummaryProvider="true" />
+    <ListPreference
+        app:dependency="sync"
+        app:defaultValue="20"
+        app:entries="@array/time_intro"
+        app:entryValues="@array/time_intro_value"
+        app:key="intro"
+        app:title="@string/intro_title"
+        app:useSimpleSummaryProvider="true" />
+    <ListPreference
+        app:dependency="sync"
+        app:defaultValue="30"
+        app:entries="@array/time_follow"
+        app:entryValues="@array/time_follow_value"
+        app:key="follow"
+        app:title="@string/follow_title"
+        app:useSimpleSummaryProvider="true" />
+
+</PreferenceScreen>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0c0c0">
+
+    <ScrollView
+        android:id="@+id/inst_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inst_okay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/inst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:text="Basic Instructions"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView
+                android:id="@+id/inst1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inst"
+                android:elevation="20dp"
+                app:shape_dot_radius="6dp"
+                app:shape_dot_spacing="2dp"
+                app:shape_dottedEdgesCutCorner_bottomLeftSize="10dp"
+                app:shape_dottedEdgesCutCorner_bottomRightSize="10dp"
+                app:shape_edge_position="bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4169E1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:padding="10dp"
+                        android:text="@string/inst1"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="28sp" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/start2" />
+                </LinearLayout>
+            </io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView>
+
+            <io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView
+                android:id="@+id/inst2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inst1"
+                android:elevation="20dp"
+                app:shape_dot_radius="6dp"
+                app:shape_dot_spacing="2dp"
+                app:shape_dottedEdgesCutCorner_bottomLeftSize="10dp"
+                app:shape_dottedEdgesCutCorner_bottomRightSize="10dp"
+                app:shape_edge_position="bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#4169E1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:padding="10dp"
+                        android:text="@string/inst2"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView>
+
+            <io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView
+                android:id="@+id/inst3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inst2"
+                android:elevation="20dp"
+                app:shape_dot_radius="6dp"
+                app:shape_dot_spacing="2dp"
+                app:shape_dottedEdgesCutCorner_bottomLeftSize="10dp"
+                app:shape_dottedEdgesCutCorner_bottomRightSize="10dp"
+                app:shape_edge_position="bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#4169E1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:padding="10dp"
+                        android:text="@string/inst3"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView>
+
+            <io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView
+                android:id="@+id/inst4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inst3"
+                android:elevation="20dp"
+                app:shape_dot_radius="6dp"
+                app:shape_dot_spacing="2dp"
+                app:shape_dottedEdgesCutCorner_bottomLeftSize="10dp"
+                app:shape_dottedEdgesCutCorner_bottomRightSize="10dp"
+                app:shape_edge_position="bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#4169E1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:padding="10dp"
+                        android:text="@string/inst4"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+            </io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView>
+
+            <io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView
+                android:id="@+id/inst5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inst4"
+                android:elevation="20dp"
+                app:shape_dot_radius="6dp"
+                app:shape_dot_spacing="2dp"
+                app:shape_dottedEdgesCutCorner_bottomLeftSize="10dp"
+                app:shape_dottedEdgesCutCorner_bottomRightSize="10dp"
+                app:shape_edge_position="bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#4169E1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:padding="10dp"
+                        android:text="@string/inst5"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="28sp" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:src="@android:drawable/ic_media_next" />
+                </LinearLayout>
+            </io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView>
+
+            <io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView
+                android:id="@+id/inst6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inst5"
+                android:elevation="20dp"
+                app:shape_dot_radius="6dp"
+                app:shape_dot_spacing="2dp"
+                app:shape_dottedEdgesCutCorner_bottomLeftSize="10dp"
+                app:shape_dottedEdgesCutCorner_bottomRightSize="10dp"
+                app:shape_edge_position="bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#4169E1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:padding="10dp"
+                        android:text="@string/inst6"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="28sp" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:src="@android:drawable/ic_media_previous" />
+                </LinearLayout>
+            </io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView>
+
+            <io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView
+                android:id="@+id/inst7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inst6"
+                android:elevation="20dp"
+                app:shape_dot_radius="6dp"
+                app:shape_dot_spacing="2dp"
+                app:shape_dottedEdgesCutCorner_bottomLeftSize="10dp"
+                app:shape_dottedEdgesCutCorner_bottomRightSize="10dp"
+                app:shape_edge_position="bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#4169E1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:padding="10dp"
+                        android:text="@string/inst7"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/round_corner"
+                        android:gravity="center|center_vertical"
+                        android:text="Yes"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="28sp" />
+                </LinearLayout>
+            </io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/inst_okay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_corner"
+        android:text="Okay"
+        android:textStyle="bold"
+        android:textColor="#000080"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/speaking_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5A5A5A"
+    tools:context="diamondcraftdevs.startups.speakingApp.SpeakingTestActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_start"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_corner1"
+        android:backgroundTint="#D3D3D3"
+        android:backgroundTintMode="src_in"
+        android:elevation="15dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_start_btn"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/start2" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/increment_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toStartOf="@id/img_start_btn"
+            android:background="@drawable/round_corner1"
+            android:backgroundTintMode="add"
+            android:elevation="20dp"
+            android:enabled="false"
+            android:padding="10dp"
+            android:text="+5 s"
+            android:textColor="@android:color/holo_red_dark"
+            app:backgroundTint="@color/teal_200" />
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toStartOf="@id/img_start_btn"
+            android:elevation="20dp"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/ic_menu_revert" />
+
+        <ImageButton
+            android:id="@+id/speaking_setting"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@id/img_start_btn"
+            android:background="@drawable/round_corner1"
+            android:backgroundTint="@color/white"
+            android:backgroundTintMode="src_in"
+            android:elevation="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/setting_icon" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@id/img_start_btn"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/teal_200"
+            android:backgroundTintMode="src_over"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:text="20"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>>
+
+    <RelativeLayout
+        android:id="@+id/relative_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_start"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner1"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="src_in"
+        android:elevation="15dp"
+        android:padding="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_toStartOf="@id/caption_switch"
+            android:background="@android:drawable/ic_media_previous"
+            android:clickable="false"
+            android:enabled="false"
+            app:backgroundTint="@color/black" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/caption_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/black"
+            android:backgroundTintMode="src_in"
+            android:checked="true"
+            android:elevation="15dp"
+            android:text="ON" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@id/caption_switch"
+            android:background="@android:drawable/ic_media_next"
+            android:clickable="false"
+            android:enabled="false"
+            app:backgroundTint="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/speaking_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative_media"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_corner1"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="src_in"
+        android:elevation="20dp">
+
+        <ScrollView
+            android:id="@+id/tv_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:scrollIndicators="right"
+                android:text="Please Turn On The  Caption"
+                android:textColor="@color/black"
+                android:textSize="@dimen/outer_text_size" />
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e9967a"
+    tools:context="diamondcraftdevs.startups.speakingApp.fragment.PracticeFragment">
+
+    <io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView
+        android:id="@+id/tv_banner_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="20dp"
+        app:shape_dot_radius="6dp"
+        app:shape_dot_spacing="2dp"
+        app:shape_dottedEdgesCutCorner_bottomLeftSize="10dp"
+        app:shape_dottedEdgesCutCorner_bottomRightSize="10dp"
+        app:shape_edge_position="right|left">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Choose Speaking Part"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+    </io.github.florent37.shapeofview.shapes.DottedEdgesCutCornerView>
+
+    <LinearLayout
+        android:id="@+id/practice_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/practice_part1"
+                android:layout_width="@dimen/img_main"
+                android:layout_height="@dimen/img_main"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner1"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:drawableBottom="@drawable/part1_icon"
+                android:elevation="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:soundEffectsEnabled="true"
+                android:text="Intro\npart-1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/inner_text_size"
+                app:iconGravity="textTop"
+                app:iconPadding="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/practice_part2"
+                android:layout_width="@dimen/img_main"
+                android:layout_height="@dimen/img_main"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner1"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:drawableBottom="@drawable/part2_icon"
+                android:elevation="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:soundEffectsEnabled="true"
+                android:text="Cue Card\nPart-2"
+                android:textSize="@dimen/inner_text_size"
+                android:textColor="@color/black"
+                app:iconGravity="textTop"
+                app:iconPadding="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/practice_part3"
+                android:layout_width="@dimen/img_main"
+                android:layout_height="@dimen/img_main"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner1"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:textSize="@dimen/inner_text_size"
+                android:drawableBottom="@drawable/part3_icon"
+                android:elevation="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:soundEffectsEnabled="true"
+                android:text="Follow-Q\n Part-3"
+                android:textColor="@color/black"
+                app:iconGravity="textTop"
+                app:iconPadding="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/practice_material"
+                android:layout_width="@dimen/img_main"
+                android:layout_height="@dimen/img_main"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner1"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:textSize="@dimen/inner_text_size"
+                android:drawableBottom="@drawable/material_icon"
+                android:elevation="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:soundEffectsEnabled="true"
+                android:text="Online \n Material"
+                android:textColor="@color/black"
+                app:iconGravity="textTop"
+                app:iconPadding="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
